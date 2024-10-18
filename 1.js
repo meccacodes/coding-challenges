@@ -26,5 +26,23 @@ console.log(counter.increment()); // 2
 console.log(counter.increment()); // 3
 console.log(counter.increment()); // 4
 
-// Hint: Use a closure to maintain the state of count.
-// Open your console and console log your counter to see its status, i.e. -> console.log('counter status: ', counter.increment())
+// My initial solution was to return counter++ which left the first increment at 0, resulting in the wrong output
+// function createCounter() {
+//   let count = 0;
+//   return {
+//     increment: function () {
+//       return count++;
+//     },
+//     decrement: function () {
+//       return count--;
+//     },
+//   };
+// }
+
+// const counter = createCounter();
+// console.log(counter.increment()); // 0
+// console.log(counter.increment()); // 1
+// console.log(counter.decrement()); // 0
+// console.log(counter.increment()); // 1
+// console.log(counter.increment()); // 2
+// console.log(counter.increment()); // 3
