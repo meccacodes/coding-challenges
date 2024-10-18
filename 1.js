@@ -5,8 +5,6 @@
 // For example:
 
 function createCounter() {
-  // Your code here
-  // return object
   let count = 0;
   return {
     increment: function () {
